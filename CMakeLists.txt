@@ -91,11 +91,7 @@ add_executable(blink1_tool
 #        server/Dictionary.h
 #        blink1-lib-lowlevel-hidapi.h
 #        blink1-lib-lowlevel-hiddata.h
-        blink1-lib.c
-        blink1-lib.h
-        blink1-tool.c
-        hiddata.c
-        hiddata.h)
+        blink1-tool.c)
 
 
 
