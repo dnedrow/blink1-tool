@@ -57,7 +57,7 @@ project(Blink1 C)
 include_directories(.)
 include_directories(hidapi/hidapi)
 
-add_library(Blink1 SHARED ./src/blink1-lib.c)
+add_library(Blink1 SHARED blink1-lib.c)
 
 target_include_directories(Blink1
         PUBLIC
@@ -66,7 +66,7 @@ target_include_directories(Blink1
         PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}/src
         )
-
+message(STATUS "CMAKE_CURRENT_SOURCE_DIR/src == ${CMAKE_CURRENT_SOURCE_DIR}/src")
 #find_library(HIDAPI_LIB
 #        NAMES hid hid.o
 #        PATHS  ${SOURCE_DIR})
