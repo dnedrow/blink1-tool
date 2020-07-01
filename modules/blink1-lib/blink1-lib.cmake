@@ -57,7 +57,7 @@ project(Blink1 C)
 include_directories(.)
 include_directories(hidapi/hidapi)
 
-add_library(Blink1 SHARED src/blink1-lib.c)
+add_library(Blink1 SHARED ./src/blink1-lib.c)
 
 target_include_directories(Blink1
         PUBLIC

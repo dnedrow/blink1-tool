@@ -71,27 +71,11 @@ if(EXISTS "${LOC_PATH}")
     Please make a build subdirectory. Feel free to remove CMakeCache.txt and CMakeFiles.")
 endif()
 
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/modules/blink1-lib")
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/modules/blink1-tool")
 
-
-include_directories(.)
-include_directories(blink1-mini-tool)
-include_directories(server)
-include_directories(server/mongoose)
-
-add_executable(blink1_tool
-#        blink1-mini-tool/blink1-mini-tool.c
-#        blink1-mini-tool/hiddata.c
-#        blink1-mini-tool/hiddata.h
-#        blink1control-tool/blink1control-tool.c
-#        blink1raw/blink1raw.c
-#        server/mongoose/mongoose.c
-#        server/mongoose/mongoose.h
-#        server/blink1-tiny-server.c
-#        server/Dictionary.c
-#        server/Dictionary.h
-#        blink1-lib-lowlevel-hidapi.h
-#        blink1-lib-lowlevel-hiddata.h
-        blink1-tool.c)
+include(blink1-lib)
+include(blink1-tool)
 
 
 
