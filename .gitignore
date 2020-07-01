@@ -30,11 +30,6 @@ Desktop.ini
 *.def
 *.exp
 
-# build products
-blink1-tool
-blink1-tiny-server
-builds
-
 .vscode
 .idea
 cmake-build-debug
